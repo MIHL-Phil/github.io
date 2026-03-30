@@ -1,0 +1,6 @@
+---
+title: "Week 13 — [Title TBD]"
+sidebar: phil-mind
+---
+
+<!-- Migrate from portfolio site week13/notes.html -->
