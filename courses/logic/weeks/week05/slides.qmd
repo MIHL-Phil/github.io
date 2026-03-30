@@ -1,0 +1,136 @@
+---
+subtitle: "PHIL104Q -- Connectives, PL Syntax"
+title: "<font style='font-size:1em;'>🗓️ Week 4<br/> Review of Chapter 6, Chapters 8 and 9</font>"
+author: Prof. [Reynolds](#)
+institute: '[Stetson University](#)'
+date: 02 September 2026
+date-meta: 14 March 2023
+date-format: "MMM DD YYYY"
+toc: false
+toc-depth: 1
+toc-title: "Argument Forms, Formalization, Formation Rules:"
+center-title-slide: false
+from: markdown+emoji
+format:
+  revealjs:
+    header-includes:
+      - \usepackage{mathpartir}
+    theme: moon
+    fig-responsive: true
+    slide-number: true
+    incremental: true
+    scrollable: true
+    mouse-wheel: false
+    preview-links: auto
+    logo: /figures/icons/course_favicon.png
+    css: /css/styles_slides.css
+    footer: 'PHIL104Q -- Introduction to Logic'
+---
+
+# PL Syntax
+
+> We start our more formal work by looking at length at a very restricted class of arguments, namely those whose relevant logical structure turns simply on the presence in premisses and/or conclusions of ‘and’, ‘or’, and ‘not’ (used as so-called sentential or propositional connectives).
+
+## Syntatic Rules for PL Languages
+
+Three stages for defining well-formed formulas
+
+![](../../../readings/wff-definition.png)
+
+(a) we fix the alphabet of symbols we
+can use in a PL language;
+(b) we stipulate what count as the ‘atomic’ wffs of a
+given language; finally,
+(c) we explain how other, ‘molecular’, wffs are built up
+from the atoms.
+
+---
+
+![](./../../../readings/pl-languages.png)
+
+---
+
+![](./../../../readings/atomic-wffs.png)
+
+---
+
+## Remember the Three Connectives
+
+| | | | | |
+|---|---|---|---|---|
+| And | | $\land$ | \* | & |
+| Or | | $\lor$ | | |
+| Not | | $\neg$ | \~ | |
+
+---
+
+![](./../../../readings/jack-jill-pl.png)
+
+---
+
+::: {.r-text-fit}
+
+Then let’s render the following into this miniature formalized language:
+
+(1) Jack doesn’t love Jill.
+(2) Jack is wise and he loves Jill.
+(3) Either Jack loves Jill or Jo does.
+(4) Jack and Jill love each other.
+(5) Neither Jack loves Jill nor does Jo.
+(6) It isn’t the case that Jack loves Jill nor does Jill love Jack.
+(7) Either Jack is not wise or both he and Jo love Jill.
+(8) It isn’t the case that either Jack loves Jill or Jill loves Jack.
+
+:::
+
+---
+
+::: {.r-text-fit}
+
+Give negations of the following in natural English:
+
+(1) It is not the case that both Jack and Jill went up the hill.
+(2) Neither Jack nor Jill went up the hill.
+(3) No one loves Jack.
+(4) Only tall men love Jill.
+(5) Everyone who loves Jack admires Jill.
+(6) Someone loves both Jack and Jill.
+(7) Some who love Jill are not themselves loveable.
+(8) Jill always arrives on time.
+(9) Whoever did that ought to pay for the damage.
+(10) Whenever it rains, it pours.
+(11) No one may smoke.
+
+:::
+
+---
+
+::: {.r-text-fit}
+
+(1) Jack is unwise and loves Jill.
+(2) Jack and Jo both love Jill.
+(3) It isn’t true that Jack doesn’t love Jill.
+(4) Jack loves Jill but Jo doesn’t.
+(5) Jack doesn’t love Jill, neither is he wise.
+(6) Either Jack loves Jill or Jill loves Jack.
+(7) Either Jack loves Jill or Jill loves Jack, but not both.
+(8) Either Jack is unwise or he loves Jill and Jo loves Jill.
+
+:::
+
+## 9.2 Construction histories, parse trees
+
+(a) Assume we are dealing with a PL language whose atoms are ‘P’, ‘Q’, ‘R’, ‘S’. Let’s use our stated W-rules to prove that the sequence of symbols ¬((P ∨ Q) ∧ ¬(¬Q ∨ R))
+
+---
+
+(1) ‘P’ is a wff. (premise)
+(2) ‘Q’ is a wff. (premise)
+(3) ‘R’ is a wff. (premise)
+(4) ‘(P ∨ Q)’ is a wff. (from 1, 2 by W3)
+(5) ‘¬Q’ is a wff. (from 2 by W4)
+(6) ‘(¬Q ∨ R)’ is a wff. (from 5, 3 by W3)
+(7) ‘¬(¬Q ∨ R)’ is a wff. (from 6 by W4)
+(8) ‘((P ∨ Q) ∧ ¬(¬Q ∨ R))’ is a wff. (from 4, 7 by W2)
+(9) ‘¬((P ∨ Q) ∧ ¬(¬Q ∨ R))’ is a wff. (from 8 by W4)
+

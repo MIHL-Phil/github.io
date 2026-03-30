@@ -1,0 +1,8 @@
+---
+title: "Intro to Philosophy — MW Section"
+sidebar: intro
+---
+
+**Meeting times:** Monday / Wednesday
+
+<!-- Section-specific schedule, roster notes. Shared content: see ../syllabus.qmd -->

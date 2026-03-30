@@ -1,0 +1,6 @@
+---
+title: "PHIL 3XX — Philosophy of Mind: Love, Knowledge, and the Suffering Self"
+sidebar: phil-mind
+---
+
+<!-- Migrate from schf-org.github.io/portfolio.github.io/courses/phil-mind/syllabus.html -->
